@@ -1,4 +1,4 @@
-#' Output formatted sequences in foreground that are mapped to specific motif.
+#' Output formatted sequences in foreground that are mapped to specific motifs.
 #'
 #' @param foreground_sequences_mapped_to_motifs A list that consists of motifs and their corresponding aligned sequences from foreground.
 #'
