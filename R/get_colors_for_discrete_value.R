@@ -1,4 +1,4 @@
-#' Generate custom colors from discrete values for heatmap.
+#' Generate custom colors from discrete values for heatmaps.
 #'
 #'
 #' @param color_intervals_list a list for building color intervals.
@@ -6,7 +6,7 @@
 #' @author Dongdong Zhan and Mengsha Tong
 #'
 #'
-#' @return A vectors containing colors distribution.
+#' @return A vectors containing color distributions.
 #' @export
 #'
 #' @examples

@@ -1,4 +1,4 @@
-#' Get data frame of amino acide sequences for a protein.
+#' Get a data frame of amino acid sequences for proteins.
 
 #'
 #' @param unique_proteins a vector for unique proteins.
@@ -10,7 +10,7 @@
 #'
 #' @author Dongdong Zhan and Mengsha Tong
 #'
-#' @return A data frame with sequences for a protein.
+#' @return A data frame with sequences for proteins.
 #' @export
 #'
 
@@ -22,12 +22,12 @@ get_df_with_AAs_i <- function(unique_proteins,
                               sequences_in_id_data_only_peptide2gi,
                               modification_index_in_protein_seq_list) {
   # 2
-  # Get the phosphorylation sequence matrix from the ist unique protein
+  # Get the phosphorylation sequence matrix from the unique protein
   unique_protein <- unique_proteins[i]
   index_of_mapping <- which(proteins_in_id_data_only_peptide2gi == unique_protein) # All peptides location (in id_data_only_peptide2gi) assigned to one protein.
   index_of_mapping_count <- length(index_of_mapping)
 
-  sequences_of_mapping <- sequences_in_id_data_only_peptide2gi[index_of_mapping] # All peptide sequence assigned to one protein.
+  sequences_of_mapping <- sequences_in_id_data_only_peptide2gi[index_of_mapping] # All peptide sequences assigned to one protein.
   df_of_mapping <- id_data_only_peptide2gi[index_of_mapping, ] # All peptide sequence and related information assigned to one protein.
 
   df_with_AAs_i <- c()

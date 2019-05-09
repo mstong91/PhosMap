@@ -1,6 +1,6 @@
-#' Get data lists from and corresponding file ids.
+#' Get data lists from files and the corresponding file ids.
 #'
-#' Read batch files (.txt or .csv) from specific directory.
+#' Read batch files (.txt or .csv) from a specific directory.
 #'
 #' @param specific_dir A folder containing files as input.
 #' @param experiment_ID A vector containing experiment codes as input
