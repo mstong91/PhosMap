@@ -1,9 +1,9 @@
 #' Get merged data frame with phospho-peptides.
 #'
 #' @param peptide_id a vector for peptide ID.
-#' @param peptide_df_with_area_psm_list a list for peptides with area and PSM.
+#' @param peptide_df_with_area_psm_list a list for peptides with areas and PSMs.
 #' @param ID_of_seq_gi_site_list a list for peptides ID with sequence, gi and site.
-#' @param ID_DF_list a list for ID and value.
+#' @param ID_DF_list a list for ID and values.
 #'
 #' @return a merged data frame with phospho-peptides.
 #' @export

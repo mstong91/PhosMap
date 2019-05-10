@@ -1,8 +1,8 @@
-#' Get informational data frame by combining result from all experiments
+#' Get informational data frame by combining results from all experiments
 #'
 #' @param ksea_regulons A kinase vector from all experiments.
 #' @param ksea_trans_list A list that consits of regulation direction of kinase from each experiment by ksea.
-#' @param ksea_x_list A list that consits of sepecific information from each experiment by ksea, like regulation direction, pvalue and activity etc..
+#' @param ksea_x_list A list that consits of sepecific information from each experiment by ksea, like regulation direction, p value and activity etc..
 #' @param ptypes_data_ratio_colnames A vector that consists of column names from experiments.
 #'
 #' @author Dongdong Zhan and Mengsha Tong

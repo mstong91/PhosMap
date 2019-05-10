@@ -1,4 +1,4 @@
-#' Get motifs and their corresponding aligned sequences form from foreground.
+#' Get motifs and their corresponding aligned sequences from foreground.
 #'
 #' @param motifs_list A list from motif enrichment analysis.
 #' @param foreground A vector for aligned sequences.

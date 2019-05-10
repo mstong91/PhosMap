@@ -1,8 +1,8 @@
-#' Kinase activity analysis based on known and predicted relationship of kinase-substrate
+#' Kinase activity analysis based on known and predicted kinase-substrate relationships
 #'
-#' @param ptypes_data_ratio_in_sigle_exp A quantifcation vector from single experiment.
+#' @param ptypes_data_ratio_in_sigle_exp A quantification vector from a single experiment.
 #' @param ID A phosporylation ID vector like VIM_S56 (GeneSymbol_psite).
-#' @param kinase_substrate_regulation_relationship A data frame contanning relationship of kinase-substrate that consists of "kinase", "substrate", "site", "sequence" and "predicted" columns.
+#' @param kinase_substrate_regulation_relationship A data frame contanning kinase-substrate relationships that consists of "kinase", "substrate", "site", "sequence" and "predicted" columns.
 #' @param ksea_activity_i_pvalue A cutoff used for filtering significant activities computed from KSEA.
 #'
 #' @author Dongdong Zhan and Mengsha Tong
@@ -160,10 +160,10 @@ get_ksea_result_list <- function(ptypes_data_ratio_in_sigle_exp, ID, kinase_subs
   names(ksea_trans_i) <- ksea_regulons_i_non_NA
 
   result_list <- list(
-    ksea_es_i_non_NA = ksea_es_i_non_NA, # enrichment score from ksea
-    ksea_pvalue_i_non_NA = ksea_pvalue_i_non_NA, # pvalue from ksea
+    ksea_es_i_non_NA = ksea_es_i_non_NA, # enrichment scores from ksea
+    ksea_pvalue_i_non_NA = ksea_pvalue_i_non_NA, # p values from ksea
     ksea_regulons_i_non_NA = ksea_regulons_i_non_NA, # regulons (kinase) from ksea
-    ksea_activity_i = ksea_activity_i, # kinase activity based on pvalue and enrichment score computed by ksea
+    ksea_activity_i = ksea_activity_i, # kinase activity based on p value and enrichment score computed by ksea
     ksea_trans_i = ksea_trans_i # regulation direction: 1 = activate, 0 = no work, -1 = supress
   )
   return(result_list)
